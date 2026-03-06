@@ -58,13 +58,13 @@
   text-decoration: none;
 }
 
-.header-top__brand img.logo-kemdikbud {
+.header-top__brand img.left-first-logo {
   height: 48px;
   width: auto;
   transition: height var(--transition-normal);
 }
 
-.header--scrolled .header-top__brand img.logo-kemdikbud {
+.header--scrolled .header-top__brand img.left-first-logo {
   height: 36px;
 }
 
@@ -80,13 +80,13 @@
   height: 30px;
 }
 
-.header-top__brand img.logo-sikn {
+.header-top__brand img.left-second-logo {
   height: 36px;
   width: auto;
   transition: height var(--transition-normal);
 }
 
-.header--scrolled .header-top__brand img.logo-sikn {
+.header--scrolled .header-top__brand img.left-second-logo {
   height: 28px;
 }
 
@@ -488,10 +488,10 @@ body.menu-open {
   .header--scrolled .header-top {
     padding: var(--space-4) 0;
   }
-  .header--scrolled .header-top__brand img.logo-kemdikbud {
+  .header--scrolled .header-top__brand img.left-first-logo {
     height: 40px;
   }
-  .header--scrolled .header-top__brand img.logo-sikn {
+  .header--scrolled .header-top__brand img.left-second-logo {
     height: 28px;
   }
   .header--scrolled .header-top__divider {
@@ -505,11 +505,11 @@ body.menu-open {
     height: 24px;
   }
 
-  .header-top__brand img.logo-kemdikbud {
+  .header-top__brand img.left-first-logo {
     height: 40px;
   }
 
-  .header-top__brand img.logo-sikn {
+  .header-top__brand img.left-second-logo {
     height: 28px;
   }
 
@@ -702,11 +702,11 @@ body.menu-open {
     padding: var(--space-2) 0;
   }
 
-  .header-top__brand img.logo-kemdikbud {
+  .header-top__brand img.left-first-logo {
     height: 32px;
   }
 
-  .header-top__brand img.logo-sikn {
+  .header-top__brand img.left-second-logo {
     height: 24px;
   }
 
