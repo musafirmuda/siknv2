@@ -62,6 +62,10 @@
   object-position: center top;
 }
 
+.hero__content p {
+  color: var(--slate-800);
+}
+
 /* ── Quick Links Card (floating overlay) ─────────────────────────────── */
 .hero__quick-links {
   position: relative;
@@ -197,7 +201,7 @@
 }
 
 .about__card {
-  background: linear-gradient(135deg, var(--sky-800) 0%, var(--sky-600) 100%);
+  background: linear-gradient(135deg, var(--sky-700) 30%, var(--sky-400) 100%);
   border-radius: var(--radius-xl);
   padding: var(--space-12);
   display: flex;
@@ -418,25 +422,33 @@
   margin-bottom: 56px;
 }
 
-.info-terkini__title {
-  color: var(--slate-900);
+/* Slider container — override Swiper's overflow to let badges show */
+.info-terkini__slider {
+  overflow-x: clip !important;
+  overflow-y: visible !important;
+  margin-bottom: var(--space-8);
 }
 
-/* Slider container */
-.info-terkini__slider {
-  overflow: hidden;
-  margin-bottom: var(--space-8);
+.info-terkini__slider .swiper-wrapper {
+  overflow: visible !important;
+}
+
+.info-terkini__slider .swiper-slide {
+  overflow: visible !important;
+  padding-top: 16px;
+  padding-left: 12px;
 }
 
 /* News Card */
 .news-card {
+  position: relative;
   display: flex;
   background-color: var(--white);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
+  border-radius: var(--radius-xl);
+  overflow: visible;
   text-decoration: none;
   height: 100%;
-  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--slate-200);
   transition: box-shadow var(--transition-fast);
 }
 
@@ -447,9 +459,12 @@
 /* Card Image Side */
 .news-card__image {
   position: relative;
-  flex: 0 0 45%;
-  max-width: 45%;
+  flex: 0 0 344px;
+  width: 344px;
+  aspect-ratio: 3 / 2;
   overflow: hidden;
+  border-radius: var(--radius-lg);
+  margin: var(--space-4);
 }
 
 .news-card__image img {
@@ -462,17 +477,31 @@
 /* TERBARU Badge */
 .news-card__badge {
   position: absolute;
-  top: var(--space-3);
-  left: var(--space-3);
-  padding: var(--space-1) var(--space-3);
-  background-color: var(--red-500);
+  top: -12px;
+  left: -8px;
+  padding: var(--space-2) var(--space-4);
+  background-color: var(--error-500);
   color: var(--white);
   font-family: var(--bs-font-sans-serif);
-  font-size: 12px;
+  font-size: 14px;
+  line-height: 24px;
   font-weight: 700;
   text-transform: uppercase;
-  border-radius: var(--radius-sm);
+  border-radius: 8px 8px 8px 0;
   letter-spacing: 0.5px;
+  z-index: 2;
+  line-height: 1;
+}
+
+.news-card__badge-accent {
+  position: absolute;
+  top: 18px;
+  left: -8px;
+  width: 8px;
+  height: 8px;
+  background-color: var(--error-800);
+  border-radius: 0 0 0 8px;
+  z-index: 2;
 }
 
 /* Card Content Side */
@@ -482,6 +511,8 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-3);
+  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+  background-color: var(--white);
 }
 
 /* Category Tag */
@@ -490,19 +521,20 @@
   align-self: flex-start;
   padding: var(--space-1) var(--space-3);
   font-family: var(--bs-font-sans-serif);
-  font-size: 13px;
+  font-size: 14px;
+  line-height: 24px;
   font-weight: 500;
-  color: var(--slate-600);
-  border: 1px solid var(--slate-300);
+  color: var(--slate-500);
+  border: 1px solid var(--slate-500);
   border-radius: var(--radius-full);
 }
 
 .news-card__desc {
   font-family: var(--bs-font-sans-serif);
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 1.6;
-  color: var(--slate-700);
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  color: var(--slate-800);
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
@@ -512,9 +544,10 @@
 
 .news-card__date {
   font-family: var(--bs-font-sans-serif);
-  font-size: 13px;
+  font-size: 14px;
+  line-height: 24px;
   font-weight: 400;
-  color: var(--slate-400);
+  color: var(--slate-500);
 }
 
 /* Bottom: Navigation + Scrollbar */

@@ -142,7 +142,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-
   // ── Info Terkini Swiper ──────────────────────────────────────────────────
   if (typeof Swiper !== "undefined") {
     const infoTerkiniEl = document.querySelector(".info-terkini__slider");
@@ -161,7 +160,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         breakpoints: {
           768: { slidesPerView: 1.5, spaceBetween: 24 },
-          992: { slidesPerView: 2.2, spaceBetween: 32 },
+          992: { slidesPerView: 1.3, spaceBetween: 32 },
         },
       });
     }

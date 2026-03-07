@@ -143,7 +143,7 @@
   align-items: center;
   gap: var(--space-1);
   padding: var(--space-3) var(--space-3);
-  color: var(--slate-700);
+  color: var(--slate-600);
   text-decoration: none;
   position: relative;
   transition: color var(--transition-fast);
@@ -244,7 +244,7 @@
 .header-dropdown__link {
   display: block;
   padding: var(--space-2) var(--space-4);
-  color: var(--slate-700);
+  color: var(--slate-600);
   text-decoration: none;
   border-radius: var(--radius-md);
   transition: background-color var(--transition-fast),
@@ -252,8 +252,8 @@
 }
 
 .header-dropdown__link:hover {
-  background-color: var(--sky-50); /* Warna background card saat hover */
-  color: var(--slate-800); /* Warna teks saat hover */
+  background-color: var(--sky-50);
+  color: var(--slate-800);
 }
 
 /* ── Mega Menu Layout ────────────────────────────────────────────────── */
@@ -368,7 +368,7 @@
 .header-search__input {
   width: 350px;
   padding: var(--space-3) var(--space-4) var(--space-3) var(--space-10);
-  color: var(--slate-700);
+  color: var(--slate-600);
   background-color: var(--white);
   border: 1px solid var(--slate-300);
   border-radius: var(--search-radius);
@@ -414,7 +414,7 @@
   border: 1px solid var(--slate-300);
   border-radius: var(--radius-md);
   cursor: pointer;
-  color: var(--slate-700);
+  color: var(--slate-600);
   transition: background-color var(--transition-fast);
 }
 

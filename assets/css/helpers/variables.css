@@ -116,7 +116,7 @@
 
   /* Body settings */
   --bs-body-bg: var(--white);
-  --bs-body-color: var(--slate-800);
+  --bs-body-color: var(--slate-600);
   --bs-heading-color: var(--slate-900);
 
   /* Font overrides */
