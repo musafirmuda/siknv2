@@ -148,24 +148,6 @@
   box-shadow: var(--shadow-sm);
 }
 
-.quick-link-card__icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background-color: var(--sky-50);
-  color: var(--sky-500);
-  border-radius: var(--radius-md);
-}
-
-.quick-link-card__icon i,
-.quick-link-card__icon svg {
-  width: 32px;
-  height: 32px;
-}
-
 .quick-link-card__text {
   flex: 1;
   font-family: var(--bs-font-sans-serif);
@@ -246,44 +228,6 @@
   align-items: center;
   gap: var(--space-4);
   flex-wrap: wrap;
-}
-
-.btn-about {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-2);
-  padding: var(--space-3) var(--space-6);
-  border-radius: var(--radius-full);
-  text-decoration: none;
-  cursor: pointer;
-  transition: all var(--transition-fast);
-  white-space: nowrap;
-}
-
-.btn-about--outline {
-  background-color: transparent;
-  border: 2px solid var(--white);
-  color: var(--white);
-}
-
-.btn-about--outline:hover {
-  background-color: var(--white);
-  color: var(--sky-500);
-}
-
-.btn-about--filled {
-  background-color: var(--white);
-  border: 2px solid var(--white);
-  color: var(--sky-500);
-}
-
-.btn-about--filled:hover {
-  background-color: var(--slate-300);
-}
-
-.btn-about__icon {
-  width: 20px;
-  height: 20px;
 }
 
 /* Right: Image */
@@ -380,56 +324,9 @@
   margin-bottom: var(--space-3);
 }
 
-.curriculum-item__icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background-color: var(--sky-50);
-  color: var(--sky-500);
-  border-radius: var(--radius-md);
-}
-
-.curriculum-item__icon i,
-.curriculum-item__icon svg {
-  width: 20px;
-  height: 20px;
-}
-
 .curriculum-item__name {
   flex: 1;
-  font-family: var(--bs-font-sans-serif);
-  font-size: 20px;
-  font-weight: 700;
   color: var(--slate-900);
-}
-
-.curriculum-item__arrow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  width: 32px;
-  height: 32px;
-  border: 1px solid var(--sky-300);
-  border-radius: var(--radius-full);
-  color: var(--sky-500);
-  text-decoration: none;
-  transition: all var(--transition-fast);
-}
-
-.curriculum-item__arrow:hover {
-  background-color: var(--sky-500);
-  color: var(--white);
-  border-color: var(--sky-500);
-}
-
-.curriculum-item__arrow i,
-.curriculum-item__arrow svg {
-  width: 16px;
-  height: 16px;
 }
 
 .curriculum-item__desc {

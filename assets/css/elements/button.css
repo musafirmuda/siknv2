@@ -1,0 +1,58 @@
+/* 
+==========================================================================
+   BUTTON ELEMENT
+========================================================================== 
+*/
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+/* Modifier: Outline White */
+.btn--outline-white {
+  background-color: transparent;
+  border: 2px solid var(--white);
+  color: var(--white);
+}
+
+.btn--outline-white:hover {
+  background-color: var(--white);
+  color: var(--sky-500);
+}
+
+/* Modifier: Outline White */
+.btn--outline-primary {
+  background-color: transparent;
+  border: 2px solid var(--sky-500);
+  color: var(--sky-500);
+}
+
+.btn--outline-primary:hover {
+  background-color: var(--sky-500);
+  color: var(--white);
+}
+
+/* Modifier: Filled White */
+.btn--filled-white {
+  background-color: var(--white);
+  border: 2px solid var(--white);
+  color: var(--sky-500);
+}
+
+.btn--filled-white:hover {
+  background-color: var(--slate-300);
+  color: var(--sky-600);
+}
+
+.btn__icon {
+  width: 24px;
+  height: 24px;
+}

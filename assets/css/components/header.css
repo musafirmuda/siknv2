@@ -188,7 +188,7 @@
   position: absolute;
   top: calc(100% + 13px);
   left: 0;
-  min-width: 253px;
+  min-width: 443px;
   background-color: var(--white);
   border: 1px solid var(--header-border);
   border-radius: 0 0 var(--radius-xl) var(--radius-xl);
@@ -313,18 +313,6 @@
   box-shadow: var(--shadow-sm);
 }
 
-.feature-card__icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  width: 48px;
-  height: 48px;
-  background-color: var(--sky-50);
-  color: var(--sky-500);
-  border-radius: var(--radius-md);
-}
-
 .feature-card__img {
   display: flex;
   align-items: center;
@@ -363,24 +351,10 @@
   word-wrap: break-word; /* Prevents overflow */
 }
 
-.feature-card__arrow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  width: 32px;
-  height: 32px;
-  border: 1px solid var(--sky-300);
-  border-radius: var(--radius-full);
-  color: var(--sky-500);
-  transition: background-color var(--transition-fast),
-    color var(--transition-fast);
-}
-
-.feature-card:hover .feature-card__arrow {
-  background-color: var(--sky-500);
+.feature-card:hover .icon-arrow {
+  background-color: var(--sky-600);
   color: var(--white);
-  border-color: var(--sky-500);
+  border-color: var(--sky-600);
 }
 
 /* ── Search Bar ──────────────────────────────────────────────────────── */

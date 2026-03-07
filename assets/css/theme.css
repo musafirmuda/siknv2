@@ -20,6 +20,7 @@
 /* 3. Elements (Small reusable UI parts: Buttons, dividers, etc.) */
 @import url("elements/accordion.css");
 @import url("elements/box.css");
+@import url("elements/icon.css");
 @import url("elements/button.css");
 @import url("elements/contact-form.css");
 @import url("elements/countdown.css");
