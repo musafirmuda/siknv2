@@ -43,6 +43,7 @@
 /* Ministry name */
 .footer__ministry {
   color: var(--white);
+  margin-bottom: 0;
 }
 
 /* Contact Info */
@@ -59,8 +60,9 @@
   gap: var(--space-3);
   font-family: var(--bs-font-sans-serif);
   font-size: 14px;
+  line-height: 24px;
   font-weight: 400;
-  color: var(--slate-300);
+  color: var(--white);
 }
 
 .footer__contact-item i,
@@ -68,7 +70,7 @@
   width: 18px;
   height: 18px;
   flex-shrink: 0;
-  color: var(--slate-400);
+  color: var(--white);
 }
 
 /* Badge row */
@@ -85,18 +87,13 @@
 
 /* Bottom bar */
 .footer__bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: var(--space-5) 0;
-  border-top: 1px solid var(--slate-700);
+  padding: var(--space-6) 0;
+  background-color: var(--slate-950);
 }
 
 .footer__copyright {
-  font-family: var(--bs-font-sans-serif);
-  font-size: 13px;
-  font-weight: 400;
-  color: var(--slate-400);
+  color: var(--white);
+  margin-bottom: 0;
 }
 
 /* Floating Back to Top */

@@ -44,6 +44,10 @@
   z-index: 2;
 }
 
+.hero__content h1 {
+  margin: 0;
+}
+
 /* ── Right Column: Image (full bleed to right edge) ──────────────────── */
 .hero__image {
   position: absolute;
@@ -313,7 +317,6 @@
 /* Individual curriculum item */
 .curriculum-item {
   padding-bottom: var(--space-6);
-  border-bottom: 1px solid var(--slate-200);
 }
 
 .curriculum-item:last-child {
@@ -322,10 +325,33 @@
 }
 
 .curriculum-item__header {
+  position: relative;
+  padding: var(--space-3) 0;
+  margin-bottom: var(--space-3);
+  border-bottom: 1px solid var(--slate-400);
+}
+
+.curriculum-item__header::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--sky-500);
+  transition: width var(--transition-normal);
+}
+
+.curriculum-item__header:hover::after {
+  width: 100%;
+}
+
+.curriculum-item__link {
   display: flex;
   align-items: center;
   gap: var(--space-3);
-  margin-bottom: var(--space-3);
+  text-decoration: none;
+  color: inherit;
 }
 
 .curriculum-item__name {
@@ -334,27 +360,38 @@
 }
 
 .curriculum-item__desc {
-  font-family: var(--bs-font-sans-serif);
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 1.6;
-  color: var(--slate-500);
-  padding-left: calc(40px + var(--space-3));
+  color: var(--slate-800);
+  margin-bottom: 0;
 }
 
 /* Right: Image */
 .struktur__image {
   flex: 0 0 45%;
   max-width: 45%;
+  position: relative;
 }
 
 .struktur__image img {
   width: 100%;
-  height: auto;
+  object-fit: cover;
   display: block;
   border-radius: var(--radius-lg);
-  object-fit: cover;
-  aspect-ratio: 4 / 3;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  z-index: 1;
+}
+
+/* Stack images after the first one on top */
+.struktur__image img:not(:first-child) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.struktur__image img.is-active {
+  opacity: 1;
+  z-index: 2;
 }
 
 /* 
@@ -453,7 +490,7 @@
 }
 
 .news-card:hover {
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-lg);
 }
 
 /* Card Image Side */
@@ -512,7 +549,6 @@
   flex-direction: column;
   gap: var(--space-3);
   border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
-  background-color: var(--white);
 }
 
 /* Category Tag */
@@ -540,6 +576,7 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   flex: 1;
+  margin-bottom: 0;
 }
 
 .news-card__date {

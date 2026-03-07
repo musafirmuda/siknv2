@@ -181,5 +181,24 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // ── Curriculum Image Swap on Hover ──────────────────────────────────────
+  const curriculumItems = document.querySelectorAll(".curriculum-item");
+  const curriculumImages = document.querySelectorAll(".struktur__image img");
+
+  if (curriculumItems.length > 0 && curriculumImages.length > 0) {
+    curriculumItems.forEach((item) => {
+      const link = item.querySelector(".curriculum-item__link");
+      if (link) {
+        link.addEventListener("mouseenter", () => {
+          const index = item.getAttribute("data-image");
+          curriculumImages.forEach((img) => img.classList.remove("is-active"));
+          if (curriculumImages[index]) {
+            curriculumImages[index].classList.add("is-active");
+          }
+        });
+      }
+    });
+  }
+
   console.log("SIKN Scripts Loaded Successfully");
 });

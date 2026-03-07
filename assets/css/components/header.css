@@ -367,10 +367,10 @@
 
 .header-search__input {
   width: 350px;
-  padding: var(--space-3) var(--space-4) var(--space-3) var(--space-10);
+  padding: var(--space-2) var(--space-4) var(--space-2) var(--space-10);
   color: var(--slate-600);
   background-color: var(--white);
-  border: 1px solid var(--slate-300);
+  border: 1px solid var(--slate-400);
   border-radius: var(--search-radius);
   outline: none;
   transition: border-color var(--transition-fast),
@@ -393,7 +393,7 @@
   transform: translateY(-50%);
   width: 18px;
   height: 18px;
-  color: var(--slate-400);
+  color: var(--slate-700);
   pointer-events: none;
 }
 
