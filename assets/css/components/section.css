@@ -253,9 +253,6 @@
   align-items: center;
   gap: var(--space-2);
   padding: var(--space-3) var(--space-6);
-  font-family: var(--bs-font-sans-serif);
-  font-size: 15px;
-  font-weight: 600;
   border-radius: var(--radius-full);
   text-decoration: none;
   cursor: pointer;
@@ -271,17 +268,17 @@
 
 .btn-about--outline:hover {
   background-color: var(--white);
-  color: var(--sky-700);
+  color: var(--sky-500);
 }
 
 .btn-about--filled {
-  background-color: rgba(255, 255, 255, 0.15);
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  color: var(--white);
+  background-color: var(--white);
+  border: 2px solid var(--white);
+  color: var(--sky-500);
 }
 
 .btn-about--filled:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--slate-300);
 }
 
 .btn-about__icon {

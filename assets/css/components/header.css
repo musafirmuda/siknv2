@@ -392,8 +392,8 @@
 }
 
 .header-search__input {
-  width: 480px;
-  padding: var(--space-2) var(--space-4) var(--space-2) var(--space-10);
+  width: 350px;
+  padding: var(--space-3) var(--space-4) var(--space-3) var(--space-10);
   color: var(--slate-700);
   background-color: var(--white);
   border: 1px solid var(--slate-300);
